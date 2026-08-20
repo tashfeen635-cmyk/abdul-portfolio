@@ -70,7 +70,7 @@ export default function Navigation() {
 
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden flex flex-col items-end gap-[5px] relative z-[60]"
+            className="md:hidden flex flex-col items-end gap-[5px] relative z-[60] w-6 h-6 justify-center"
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
           >
             <motion.span
@@ -101,6 +101,16 @@ export default function Navigation() {
             transition={{ duration: 0.4 }}
             className="fixed inset-0 z-[55] bg-primary/98 backdrop-blur-2xl flex flex-col items-center justify-center"
           >
+            <button
+              onClick={() => setMobileOpen(false)}
+              className="absolute top-8 right-10 w-10 h-10 flex items-center justify-center"
+              aria-label="Close menu"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F5F2EA" strokeWidth="1.5">
+                <path d="M18 6L6 18M6 6l12 12" />
+              </svg>
+            </button>
+
             <nav className="flex flex-col items-center gap-10">
               {navLinks.map((link, i) => (
                 <motion.a
