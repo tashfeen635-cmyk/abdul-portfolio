@@ -60,7 +60,9 @@ export default function FinalCTA() {
           className="flex flex-col sm:flex-row gap-4 mt-10 md:mt-14"
         >
           <a
-            href="#"
+            href="https://terrapakistan.com/work-with-us"
+            target="_blank"
+            rel="noopener noreferrer"
             data-cursor="cta"
             className="inline-flex items-center justify-center gap-3 text-[11px] md:text-xs tracking-[0.25em] text-warm-white font-sans font-light uppercase group border border-warm-white/20 px-8 md:px-10 py-4 md:py-5 hover:border-accent hover:text-accent transition-all duration-500"
           >
