@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #0B0B0B;
+  --color-secondary: #111111;
+  --color-warm-white: #F5F2EA;
+  --color-muted-gray: #A8A39A;
+  --color-accent: #C4A265;
+  --color-accent-dim: rgba(196, 162, 101, 0.15);
+}
+
+@theme inline {
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-warm-white: var(--color-warm-white);
+  --color-muted-gray: var(--color-muted-gray);
+  --color-accent: var(--color-accent);
+  --color-accent-dim: var(--color-accent-dim);
+  --font-serif: var(--font-cormorant);
+  --font-sans: var(--font-inter);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+  background: #0B0B0B;
+}
+
+body {
+  background: #0B0B0B;
+  color: #F5F2EA;
+  font-family: var(--font-sans), 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.site-frame {
+  --site-pad-x: 1.5rem;
+  --site-pad-top: 1.5rem;
+  --site-pad-bottom: 1.5rem;
+  padding: var(--site-pad-top) var(--site-pad-x) var(--site-pad-bottom);
+}
+
+@media (min-width: 768px) {
+  .site-frame {
+    --site-pad-x: 2rem;
+    --site-pad-top: 2rem;
+    --site-pad-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-frame {
+    --site-pad-x: 2.5rem;
+    --site-pad-top: 2.5rem;
+    --site-pad-bottom: 2.5rem;
+  }
+}
+
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.site-pad-x {
+  padding-left: var(--site-pad-x);
+  padding-right: var(--site-pad-x);
+}
+
+::selection {
+  background: rgba(196, 162, 101, 0.3);
+  color: #F5F2EA;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0B0B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A8A39A;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C4A265;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
