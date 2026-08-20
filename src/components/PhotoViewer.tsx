@@ -95,14 +95,6 @@ export default function PhotoViewer({
                     aspectRatio: "16/10",
                   }}
                 />
-                <div className="w-full mt-6 flex flex-col md:flex-row md:items-center md:justify-between gap-2 px-2">
-                  <p className="font-serif text-lg md:text-xl text-warm-white font-light">
-                    {photo.caption}
-                  </p>
-                  <span className="text-[10px] tracking-[0.25em] text-muted-gray font-sans font-light uppercase shrink-0">
-                    {photo.location}
-                  </span>
-                </div>
               </motion.div>
             </AnimatePresence>
 
