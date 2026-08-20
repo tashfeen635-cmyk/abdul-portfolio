@@ -24,13 +24,15 @@ export default function Home() {
       <PageLoader />
       <CustomCursor />
       <Navigation />
-      <main className="site-frame">
+      <main>
         <Hero />
-        <About />
-        <Photography />
-        <Journey />
-        <TerraPakistan />
-        <FinalCTA />
+        <div className="site-frame">
+          <About />
+          <Photography />
+          <Journey />
+          <TerraPakistan />
+          <FinalCTA />
+        </div>
       </main>
     </SmoothScroll>
   );

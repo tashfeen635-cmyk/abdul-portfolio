@@ -60,7 +60,7 @@ export default function Hero() {
           initial="hidden"
           animate="visible"
           variants={stagger}
-          className="max-w-5xl"
+          className="max-w-5xl" style={{ paddingLeft: "7%", paddingBottom: "11%" }}
         >
           <motion.div
             variants={fadeUp}
