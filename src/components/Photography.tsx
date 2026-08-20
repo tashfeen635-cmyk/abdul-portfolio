@@ -6,49 +6,49 @@ import PhotoViewer from "./PhotoViewer";
 
 const photos = [
   {
-    src: "/images/photo-1.jpg",
+    src: "/images/photo-1.webp",
     caption: "Standing at the edge of the world",
     location: "Hunza, Gilgit-Baltistan",
     size: "large",
   },
   {
-    src: "/images/photo-2.jpg",
+    src: "/images/photo-2.webp",
     caption: "Morning light on the Karakoram",
     location: "Skardu, Gilgit-Baltistan",
     size: "portrait",
   },
   {
-    src: "/images/photo-3.jpg",
+    src: "/images/photo-3.webp",
     caption: "The road less travelled",
     location: "Astore Valley, Pakistan",
     size: "small",
   },
   {
-    src: "/images/photo-4.jpg",
+    src: "/images/photo-4.webp",
     caption: "Among the giants",
     location: "Passu, Gilgit-Baltistan",
     size: "panoramic",
   },
   {
-    src: "/images/photo-5.jpg",
+    src: "/images/photo-5.webp",
     caption: "Where the mountains meet the sky",
     location: "Fairy Meadows, Pakistan",
     size: "portrait",
   },
   {
-    src: "/images/photo-6.jpg",
+    src: "/images/photo-6.webp",
     caption: "Village life in the Karakoram",
     location: "Khaplu, Gilgit-Baltistan",
     size: "large",
   },
   {
-    src: "/images/photo-7.jpg",
+    src: "/images/photo-7.webp",
     caption: "Camp above the clouds",
     location: "Deosai, Pakistan",
     size: "small",
   },
   {
-    src: "/images/photo-8.jpg",
+    src: "/images/photo-8.webp",
     caption: "On the way to Khunjerab",
     location: "Khunjerab Pass, Pakistan",
     size: "panoramic",

@@ -25,7 +25,7 @@ export default function About() {
             <div className="relative aspect-[3/4] overflow-hidden">
               <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                style={{ backgroundImage: "url('/images/about.jpg')" }}
+                style={{ backgroundImage: "url('/images/about.webp')" }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
             </div>

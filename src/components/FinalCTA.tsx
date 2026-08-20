@@ -26,7 +26,7 @@ export default function FinalCTA() {
       <div className="absolute inset-0">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/images/cta-bg.jpg')" }}
+          style={{ backgroundImage: "url('/images/cta-bg.webp')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/70 via-primary/60 to-primary" />
       </div>

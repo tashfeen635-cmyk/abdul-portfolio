@@ -17,7 +17,7 @@ export default function TerraPakistan() {
       <div className="absolute inset-0 opacity-20">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/images/terra-bg.jpg')" }}
+          style={{ backgroundImage: "url('/images/terra-bg.webp')" }}
         />
         <div className="absolute inset-0 bg-primary/80" />
       </div>
