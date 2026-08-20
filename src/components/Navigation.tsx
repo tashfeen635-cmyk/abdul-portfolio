@@ -46,7 +46,7 @@ export default function Navigation() {
             : "bg-transparent"
         }`}
       >
-        <nav className="flex items-center justify-between px-[20px] py-[10px]">
+        <nav className="flex items-center justify-between" style={{ padding: "10px 20px" }}>
           <a href="#" className="flex items-center gap-2 group">
             <span className="font-serif text-xl md:text-2xl font-light tracking-wide text-warm-white">
               AR

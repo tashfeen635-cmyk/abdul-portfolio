@@ -67,10 +67,10 @@ export default function PhotoViewer({
             </button>
           </div>
 
-          <div className="flex-1 flex items-center justify-center px-4 md:px-16 relative">
+          <div className="flex-1 flex items-center justify-center px-4 md:px-16 relative overflow-hidden">
             <button
               onClick={onPrev}
-              className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-muted-gray hover:text-warm-white transition-colors duration-300 z-10 p-4"
+              className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 text-muted-gray hover:text-warm-white transition-colors duration-300 z-10 p-4"
               aria-label="Previous photo"
             >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
@@ -85,17 +85,21 @@ export default function PhotoViewer({
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.4 }}
-                className="max-w-5xl w-full max-h-[70vh] relative"
+                className="w-full max-w-5xl flex flex-col items-center"
               >
                 <div
-                  className="w-full aspect-[16/10] bg-cover bg-center bg-no-repeat"
-                  style={{ backgroundImage: `url('${photo.src}')` }}
+                  className="w-full bg-contain bg-center bg-no-repeat"
+                  style={{
+                    backgroundImage: `url('${photo.src}')`,
+                    maxHeight: "60vh",
+                    aspectRatio: "16/10",
+                  }}
                 />
-                <div className="mt-6 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                <div className="w-full mt-6 flex flex-col md:flex-row md:items-center md:justify-between gap-2 px-2">
                   <p className="font-serif text-lg md:text-xl text-warm-white font-light">
                     {photo.caption}
                   </p>
-                  <span className="text-[10px] tracking-[0.25em] text-muted-gray font-sans font-light uppercase">
+                  <span className="text-[10px] tracking-[0.25em] text-muted-gray font-sans font-light uppercase shrink-0">
                     {photo.location}
                   </span>
                 </div>
@@ -104,7 +108,7 @@ export default function PhotoViewer({
 
             <button
               onClick={onNext}
-              className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-muted-gray hover:text-warm-white transition-colors duration-300 z-10 p-4"
+              className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 text-muted-gray hover:text-warm-white transition-colors duration-300 z-10 p-4"
               aria-label="Next photo"
             >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">

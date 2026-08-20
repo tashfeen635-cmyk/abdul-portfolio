@@ -131,14 +131,6 @@ export default function Photography() {
                 style={{ backgroundImage: `url('${photos[0].src}')` }}
               />
             </div>
-            <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-500 flex items-end p-6 md:p-8">
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <p className="font-serif text-lg text-warm-white font-light">{photos[0].caption}</p>
-                <span className="text-[10px] tracking-[0.2em] text-muted-gray font-sans font-light uppercase">
-                  {photos[0].location}
-                </span>
-              </div>
-            </div>
           </motion.div>
 
           <motion.div
@@ -152,14 +144,6 @@ export default function Photography() {
                 className="w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-105"
                 style={{ backgroundImage: `url('${photos[1].src}')` }}
               />
-            </div>
-            <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-500 flex items-end p-6">
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <p className="font-serif text-lg text-warm-white font-light">{photos[1].caption}</p>
-                <span className="text-[10px] tracking-[0.2em] text-muted-gray font-sans font-light uppercase">
-                  {photos[1].location}
-                </span>
-              </div>
             </div>
           </motion.div>
         </div>
@@ -178,13 +162,6 @@ export default function Photography() {
                 style={{ backgroundImage: `url('${photos[2].src}')` }}
               />
             </div>
-            <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-500 flex items-end p-5">
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <span className="text-[10px] tracking-[0.2em] text-muted-gray font-sans font-light uppercase">
-                  {photos[2].location}
-                </span>
-              </div>
-            </div>
           </motion.div>
 
           <motion.div
@@ -198,14 +175,6 @@ export default function Photography() {
                 className="w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-105"
                 style={{ backgroundImage: `url('${photos[3].src}')` }}
               />
-            </div>
-            <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-500 flex items-end p-6 md:p-8">
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <p className="font-serif text-lg text-warm-white font-light">{photos[3].caption}</p>
-                <span className="text-[10px] tracking-[0.2em] text-muted-gray font-sans font-light uppercase">
-                  {photos[3].location}
-                </span>
-              </div>
             </div>
           </motion.div>
         </div>
@@ -224,14 +193,6 @@ export default function Photography() {
                 style={{ backgroundImage: `url('${photos[4].src}')` }}
               />
             </div>
-            <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-500 flex items-end p-6">
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <p className="font-serif text-lg text-warm-white font-light">{photos[4].caption}</p>
-                <span className="text-[10px] tracking-[0.2em] text-muted-gray font-sans font-light uppercase">
-                  {photos[4].location}
-                </span>
-              </div>
-            </div>
           </motion.div>
 
           <motion.div
@@ -245,14 +206,6 @@ export default function Photography() {
                 className="w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-105"
                 style={{ backgroundImage: `url('${photos[5].src}')` }}
               />
-            </div>
-            <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-500 flex items-end p-6 md:p-8">
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <p className="font-serif text-lg text-warm-white font-light">{photos[5].caption}</p>
-                <span className="text-[10px] tracking-[0.2em] text-muted-gray font-sans font-light uppercase">
-                  {photos[5].location}
-                </span>
-              </div>
             </div>
           </motion.div>
         </div>
@@ -271,13 +224,6 @@ export default function Photography() {
                 style={{ backgroundImage: `url('${photos[6].src}')` }}
               />
             </div>
-            <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-500 flex items-end p-5">
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <span className="text-[10px] tracking-[0.2em] text-muted-gray font-sans font-light uppercase">
-                  {photos[6].location}
-                </span>
-              </div>
-            </div>
           </motion.div>
 
           <motion.div
@@ -291,14 +237,6 @@ export default function Photography() {
                 className="w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-105"
                 style={{ backgroundImage: `url('${photos[7].src}')` }}
               />
-            </div>
-            <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-500 flex items-end p-6 md:p-8">
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <p className="font-serif text-lg text-warm-white font-light">{photos[7].caption}</p>
-                <span className="text-[10px] tracking-[0.2em] text-muted-gray font-sans font-light uppercase">
-                  {photos[7].location}
-                </span>
-              </div>
             </div>
           </motion.div>
         </div>
