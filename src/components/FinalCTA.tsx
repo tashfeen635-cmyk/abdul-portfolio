@@ -72,7 +72,9 @@ export default function FinalCTA() {
             </span>
           </a>
           <a
-            href="mailto:hello@abdulrehman.com"
+            href="https://api.whatsapp.com/send/?phone=923146605966&text&type=phone_number&app_absent=0"
+            target="_blank"
+            rel="noopener noreferrer"
             data-cursor="cta"
             className="inline-flex items-center justify-center gap-3 text-[11px] md:text-xs tracking-[0.25em] text-warm-white font-sans font-light uppercase group border border-warm-white/20 px-8 md:px-10 py-4 md:py-5 hover:border-accent hover:text-accent transition-all duration-500"
           >

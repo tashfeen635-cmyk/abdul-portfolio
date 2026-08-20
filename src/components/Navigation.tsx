@@ -7,7 +7,7 @@ const navLinks = [
   { label: "JOURNEY", href: "#journey" },
   { label: "STORIES", href: "#photography" },
   { label: "TERRA", href: "#terra" },
-  { label: "CONTACT", href: "#contact" },
+  { label: "CONTACT", href: "https://api.whatsapp.com/send/?phone=923146605966&text&type=phone_number&app_absent=0" },
 ];
 
 export default function Navigation() {
@@ -61,6 +61,8 @@ export default function Navigation() {
               <a
                 key={link.label}
                 href={link.href}
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="text-[11px] tracking-[0.2em] text-muted-gray hover:text-warm-white transition-colors duration-300 font-sans font-light"
               >
                 {link.label}
@@ -116,6 +118,8 @@ export default function Navigation() {
                 <motion.a
                   key={link.label}
                   href={link.href}
+                  target={link.href.startsWith("http") ? "_blank" : undefined}
+                  rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   onClick={() => setMobileOpen(false)}
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
